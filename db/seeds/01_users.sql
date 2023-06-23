@@ -1,5 +1,10 @@
-insert into users (uniqueid, name, email, phone_number, password) values ('u100', 'Jackie', 'Jackie@gmail.com', '4123-784-1457', 'Jackie@123');
-insert into users (uniqueid, name, email, phone_number, password) values ('u101', 'Abdella', 'Abdella@gmail.com', '415-774-144', 'Abdella@456');
-insert into users (uniqueid, name, email, phone_number, password) values ('u102', 'Shilpa', 'Shilpa@gmail.com', '897-724-1442', 'Shilpa@789');
-insert into users (uniqueid, name, email, phone_number, password) values ('u103', 'Alice', 'Alice@gmail.com', '647-724-1544', 'Alice@123');
-insert into users (uniqueid, name, email, phone_number, password) values ('u104', 'Taiwo', 'Taiwo@gmail.com', '647-747-4747', 'Taiwo@147');
+INSERT INTO users (name, email, phone_number, password) VALUES ('Jackie', 'Jackie@gmail.com', '647-637-6969', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u');
+
+INSERT INTO users (name, email, phone_number, password) VALUES ('Abdella', 'Abdella@gmail.com', '647-637-6969', '$2a$12$VoUsqgYSN0QeGSFoIHRNr.Knqu79s0ZYI87kTE7TWWjgKR2/J7Ocq');
+
+INSERT INTO users (name, email, phone_number, password) VALUES ('Shilpa', 'Shilpa@gmail.com', '647-637-6969', '$2a$12$8DUP4MOyLrZY9xO1pvHTi.dZ.adLM5WBvEXH2lmD.75nQeolDMz16');
+
+INSERT INTO users (name, email, phone_number, password) VALUES ('Alice', 'Alice@gmail.com', '647-637-6969', '
+$2a$12$ETG6ERsHK4BbU1xfnKBEc.gsJsv18UVLJ6MgrFuTi6OiQ/B3/zaYC');
+
+INSERT INTO users (name, email, phone_number, password) VALUES ('Taiwo', 'Taiwo@gmail.com', '647-637-6969', '$2a$12$SS16IXDhrimtHsprzvOwuOhLs5hfjUmxczHG1AZv.nff8iU.brA1.');
