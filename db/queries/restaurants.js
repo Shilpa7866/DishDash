@@ -42,13 +42,13 @@ const getRestaurantsById = (id) => {
 //   });
 
 
-getRestaurantsById(3)
-  .then((restaurant) => {
-    console.log(restaurant);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+// getRestaurantsById(3)
+//   .then((restaurant) => {
+//     console.log(restaurant);
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });
 
   module.exports = {
     getAllRestaurants,
