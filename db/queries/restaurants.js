@@ -13,11 +13,36 @@ const getAllRestaurants = () => {
 };
 
 
+const getRestaurantsById = (id) => {
+  return db
+    .query(`SELECT * FROM restaurants WHERE id = $1`, [id])
+    .then((data) => {
+      // Check if the restaurant's id exist
+      if (data.rows.length > 0) {
+        return data.rows[0];
+      } else {
+        return null;
+      }
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+};
+
 ////////////////////////////////////////////////////////////
 // Code to test functions
 ////////////////////////////////////////////////////////////
 
-getAllRestaurants()
+// getAllRestaurants()
+//   .then((restaurant) => {
+//     console.log(restaurant);
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });
+
+
+getRestaurantsById(3)
   .then((restaurant) => {
     console.log(restaurant);
   })
@@ -27,4 +52,5 @@ getAllRestaurants()
 
   module.exports = {
     getAllRestaurants,
+    getRestaurantsById
   };
