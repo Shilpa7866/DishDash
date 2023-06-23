@@ -1,10 +1,38 @@
 const db = require('../connection');
 
-const getUsers = () => {
-  return db.query('SELECT * FROM users;')
-    .then(data => {
-      return data.rows;
+// Return information about users
+const getUsersById = (id) => {
+  return db
+    .query("SELECT * FROM users WHERE id = $1", [id])
+    .then((data) => {
+      // Check if the user's id exist
+      if (data.rows.length > 0) {
+        return data.rows[0];
+      } else {
+        return null;
+      }
+    })
+    .catch((err) => {
+      console.log(err.message);
     });
 };
 
-module.exports = { getUsers };
+
+////////////////////////////////////////////////////////////
+// Code to test functions
+////////////////////////////////////////////////////////////
+
+// getUsersById(4)
+//   .then((user) => {
+//     console.log(user);
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });
+
+
+
+
+module.exports = {
+  getUsersById,
+};
