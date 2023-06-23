@@ -26,7 +26,7 @@ INSERT INTO orders (user_id, restaurant_id, created_at, estimated_time, ready_at
 (4, 2, '2016-06-22 17:26:25-06', '30 min', '2016-06-22 17:56:25-06', '2016-06-22 18:05:36-06', 1499);
 
 INSERT INTO orders (user_id, restaurant_id, created_at, estimated_time, ready_at, picked_up_at, total_price) VALUES 
-(1, 2, '2016-06-23 14:20:25-06, '30 min', '2016-06-23 14:50:38-06', '2016-06-23 14:55:25-06', 2999);
+(1, 2, '2016-06-23 14:20:25-06', '30 min', '2016-06-23 14:50:38-06', '2016-06-23 14:55:25-06', 2999);
 
 INSERT INTO orders (user_id, restaurant_id, created_at, estimated_time, ready_at, picked_up_at, total_price) VALUES 
 (2, 1, ' 2023-06-20 09:22:25-04', '30 min', '2023-06-20 09:52:25-04', '2023-06-20 09:55:25-04', 2999);
