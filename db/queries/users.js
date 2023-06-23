@@ -12,11 +12,27 @@ const getUsersById = (id) => {
         return null;
       }
     })
-    .catch((err) => {
+    .catch(err => {
       console.log(err.message);
-    });
+    })
 };
 
+
+// Find email in the DB when user logs in
+const getUsersByEmail = (email) => {
+  return db
+    .query(`SELECT * FROM users WHERE LOWER(email) = LOWER($1)`, [email])
+    .then(data => {
+      if (data.rows.length > 0) {
+        return data.rows[0];
+      } else {
+        return null;
+      }
+    })
+    .catch(err => {
+      console.log(err.message);
+    })
+};
 
 ////////////////////////////////////////////////////////////
 // Code to test functions
@@ -31,8 +47,16 @@ const getUsersById = (id) => {
 //   });
 
 
+// getUsersByEmail("victoriablackwell@outlook.com")
+//   .then((user) => {
+//     console.log(user);
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });
 
 
 module.exports = {
   getUsersById,
+  getUsersByEmail,
 };
