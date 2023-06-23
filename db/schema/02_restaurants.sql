@@ -7,5 +7,5 @@ CREATE TABLE restaurants (
   opening_hours VARCHAR(255) NOT NULL,
   website VARCHAR(255) NOT NULL,
   phone_number VARCHAR(255) NOT NULL,
-  address TEXT,
+  address TEXT
 );
