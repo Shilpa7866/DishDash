@@ -4,7 +4,7 @@
  *   these routes are mounted onto /api/users
  * See: https://expressjs.com/en/guide/using-middleware.html#middleware.router
  */
-
+ 
 const express = require('express');
 const router = express.Router();
 const userQueries = require('../db/queries/users');
@@ -26,7 +26,7 @@ router.get('/', (req, res) => {
 });
 
 
-
+/*
 
 
 // User placing in their information 
@@ -38,11 +38,9 @@ app.get("/register", (req, res) => {
 
 // take in user info
 // bcrpyt password in the tables and have comparison function to check if they match 
-
-  
-
   return res.redirect("/homePage")
 });
+
 app.post('/login', (req, res) => {
 
 
@@ -96,7 +94,7 @@ app.post("/user/:id", (res, req) => {
 return res.redirect("/homePage")
   
 })
-
+*/
 
 module.exports = router;
 
@@ -110,3 +108,6 @@ module.exports = router;
 // Get order/id (Creating an order is POST OR GET?) click on the kart and place order 
 // GET USER/ID to show information 
 // POST user information to update (if statement)
+
+
+ 

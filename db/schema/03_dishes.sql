@@ -6,7 +6,7 @@ CREATE TABLE dishes (
   name VARCHAR(255) NOT NULL,
   description TEXT,
   availability BOOLEAN NOT NULL DEFAULT TRUE,
-  photo VARCHAR(255) NOT NULL,
+  photo VARCHAR(310) NOT NULL,
   price INTEGER NOT NULL DEFAULT 0,
   dietary_information TEXT
 );
